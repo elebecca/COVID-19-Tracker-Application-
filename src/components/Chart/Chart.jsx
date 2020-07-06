@@ -2,13 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api';
 
 const Chart = () => {
-    const [dailyData, setDaylyData] = useState({})
+    const [dailyData, setDailyData] = useState({})
 
     useEffect(() => {
         const fetchAPI = async () => {
-            setDailyDta(await fetchDailyData());
+            setDailyData(await fetchDailyData());
         }
+        fetchAPI
     });
+
+
     return (
         <h1>Chart</h1>
     )
