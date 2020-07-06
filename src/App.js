@@ -9,19 +9,19 @@ class App extends React.Component {
         data: {},
     }
 
-    async componentDidMount(){
+    async componentDidMount() {
         const fetchedData = await fetchData();
 
-        this.setState({ data: fetchedData})
+        this.setState({ data: fetchedData })
     }
     render() {
         const { data } = this.state
 
         return (
             <div className={style.container}>
-                <Cards  data={data}/>
+                <Cards data={data} />
                 <CountryPicker />
-                <Chart />
+                <Chart data={data} />
             </div>
         )
     }
