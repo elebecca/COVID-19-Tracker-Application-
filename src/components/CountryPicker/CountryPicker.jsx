@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { NativeSelect, FromControl } from '@material-ui/core';
 
-const CountryPicker = () =>  {
+import styles from './CountryPicker.module.css';
+
+const CountryPicker = () => {
     return (
-        <h1>CountryPicker</h1>
+        <FromControl>
+            <NativeSelect className={styles.FromControl}>
+                <option value='global'>Global</option>
+            </NativeSelect>
+        </FromControl>
     )
 }
 
