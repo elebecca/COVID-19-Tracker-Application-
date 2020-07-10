@@ -23,7 +23,7 @@ $ npm start
 To view the app navigate to: http://localhost:3030/
 
 ## <a name="Screenshots">Screenshots</a>
-![screenshot](Screenshot.PNG)
-![screenshot](Screenshot2.PNG)
+![screenshot](screenshot.PNG)
+![screenshot](screenshot2.PNG)
 
 ## <a name="Live Site">[Live Site](https://covid19statswebsite.netlify.com/)</a>
