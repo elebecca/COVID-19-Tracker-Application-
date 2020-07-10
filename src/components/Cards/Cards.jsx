@@ -5,14 +5,14 @@ import cx from 'classname';
 
 import style from './Cards.module.css';
 
-const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }})=>  {
-    if(!confirmed) {
+const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
+    if (!confirmed) {
         return 'Loading...'
     }
     return (
         <div className={style.container}>
             <Grid container spacing={3} justify='center'>
-                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.infected )}>
+                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.infected)}>
                     <CardContent>
                         <Typography color='textSecondary' gutterBottom>Infected</Typography>
                         <Typography variant='h5'>
@@ -23,7 +23,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }})=>  {
                     </CardContent>
                 </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.recovered )}>
+                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.recovered)}>
                     <CardContent>
                         <Typography color='textSecondary' gutterBottom>Recoverd</Typography>
                         <Typography variant='h5'>
@@ -34,7 +34,7 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }})=>  {
                     </CardContent>
                 </Grid>
 
-                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.deaths )}>
+                <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.deaths)}>
                     <CardContent>
                         <Typography color='textSecondary' gutterBottom>Deaths</Typography>
                         <Typography variant='h5'>
